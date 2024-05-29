@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 function Common(){
     return(
-        <div>
+        <div className="flex flex-col">
             <Navbar/>
             <Outlet/>
             <Footer/>

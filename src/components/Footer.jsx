@@ -2,8 +2,10 @@
 
 function Footer(){
     return(
-        <footer className="Footer">
-            
+        <footer className="footer">
+            <div>
+                <h1>Footer</h1>
+            </div>
         </footer>
     )
 }
