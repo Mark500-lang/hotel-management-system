@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar(){
@@ -9,7 +9,7 @@ function Navbar(){
                     <div className="container mx-auto w-full flex flex-row flex-wrap py-10 md:justify-normal justify-between items-center">
                     <Link
                         to="/"
-                        className="flex title-font font-medium items-center text-black dark:text-gray-900 mr-4 border-r-none md:border-r border-gray-900 pr-4 md:mb-0"
+                        className="flex title-font font-medium items-center text-grey-900 mr-4 border-r-none md:border-r border-gray-900 pr-4 md:mb-0"
                     >
                         <img
                             src="./logo192.png"
@@ -25,38 +25,38 @@ function Navbar(){
                     >
                         <Link
                             to="/"
-                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded dark:text-gray-900 text-black items-center justify-center hover:bg-[rgb(0,156,200)] dark:hover:bg-[rgba(225,225,225,0.1 hover:text-white"
+                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black items-center justify-center hover:bg-[rgb(0,156,200)] hover:text-white"
                         >
                             Home
                         </Link>
                         <Link
                             to="/about"
-                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded dark:text-gray-900 text-black items-center justify-center hover:bg-[rgb(0,156,200)] dark:hover:bg-[rgba(225,225,225,0.1 hover:text-white"
+                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black items-center justify-center hover:bg-[rgb(0,156,200)] hover:text-white"
                         >
                             About
                         </Link>
                         <Link
                             to="/rooms"
-                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded dark:text-gray-900 text-black items-center justify-center hover:bg-[rgb(0,156,200)] dark:hover:bg-[rgba(225,225,225,0.1 hover:text-white"
+                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black items-center justify-center hover:bg-[rgb(0,156,200)] hover:text-white"
                         >
                             Rooms
                         </Link>
                         <Link
                             to="/wine&dine"
-                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded dark:text-gray-900 text-black items-center justify-center hover:bg-[rgb(0,156,200)] dark:hover:bg-[rgba(225,225,225,0.1 hover:text-white"
+                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black items-center justify-center hover:bg-[rgb(0,156,200)] hover:text-white"
                         >
                             Wine & Dine
                         </Link>
                         <Link
                             to="/contacts"
-                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded dark:text-gray-900 text-black items-center justify-center hover:bg-[rgb(0,156,200)] dark:hover:bg-[rgba(225,225,225,0.1 hover:text-white"
+                            className="lg:inline-flex lg:w-auto px-3 py-2 rounded text-black items-center justify-center hover:bg-[rgb(0,156,200)] hover:text-white"
                         >
                             Contact
                         </Link>
                     </nav>
                     <div className="flex justify-end items-center gap-1">
-                        <button variant="outline" className="text-sm text-white mx-5 h-10 px-4 py-2 bg-[rgb(0,156,200)]" asChild>
-                            <Link href="/auth">Book Now</Link>
+                        <button variant="outline" className="text-sm text-white mx-5 h-10 px-4 py-2 rounded bg-[rgb(0,156,200)]" asChild>
+                            <Link href="/auth">Get Started</Link>
                         </button>
                     </div>
                     </div>
