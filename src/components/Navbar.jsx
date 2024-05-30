@@ -56,7 +56,7 @@ function Navbar(){
                     </nav>
                     <div className="flex justify-end items-center gap-1">
                         <button variant="outline" className="text-sm text-white mx-5 h-10 px-4 py-2 rounded bg-[rgb(0,156,200)]" asChild>
-                            <Link href="/auth">Get Started</Link>
+                            <Link href="/auth">Book Now</Link>
                         </button>
                     </div>
                     </div>

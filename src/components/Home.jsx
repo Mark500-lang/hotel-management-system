@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Offers from './Offers';
+import PickDate from './PickDate';
 
-function Home(){
+function Home({date, setDate, startDate, setStartDate, endDate, setEndDate}){
     return(
-        <section className="min-h-max">
+        <div className="min-h-max">
             <div>
                 <img src="./assets/image9.jpg" alt="home" className="w-full h-[40rem] bg-blend-multiply bg-black-900"/>
                 <div className="container flex font-bold  flex-col mx-auto max-w-7xl left-0 right-0 items-center justify-center p-5 absolute top-[40%] ">
@@ -22,10 +24,10 @@ function Home(){
                     Nestled amidst the lush greenery of Nairobi, Pine Grove Lodge offers a serene retreat from the vibrant city life. Our charming lodge blends rustic elegance with modern comforts to ensure a memorable stay. Whether you're seeking a romantic getaway, a family vacation, or a solo retreat, Pine Grove Lodge promises a rejuvenating experience amidst the tranquility of nature right in the heart of Nairobi!
                 </p>
             </div>
-            <div className="container flex flex-col mt-40 mb-20">
+            <div className="container flex flex-col mt-40 mb-10">
                 <div className="text-center">
                     <h6 className="text-xl">Unparalleled Luxury & Comfort</h6>
-                    <div className='w-full xl:grid gap-4 xl:grid-cols-2 md:flex my-10'>
+                    <div className='w-full mx-auto gap-4 grid md:grid-cols-2 grid-cols-1 my-10'>
                             <div className="max-w-xl bg-white rounded-lg shadow-sm transition duration-100 ease-in-out hover:shadow-lg mb-4">
                                     <img className="rounded-t-lg" src="./assets/image8.jpg" alt="" />
                                 <div className="p-5 text-left">
@@ -113,8 +115,38 @@ function Home(){
                     </div>
                 </section>
             </div>
-           <Offers/>
-        </section>
+
+            <section className="py-24">
+                <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
+                    <div className="w-full relative py-8 md:py-10 px-6 md:px-8 rounded-2xl bg-gradient-to-tr from-gray-100 to-gray-200">
+                        <div className="absolute right-0 top-0 h-full w-full flex justify-end">
+                            <div className="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
+                                <span className="absolute w-16 h-16 -top-1 -right-1 bg-blue-500 rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -right-1 bg-teal-500 rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -left-1 bg-indigo-300 rounded-md rotate-45" />
+                            </div>
+                        </div>
+                        <div className="absolute left-0 bottom-0 h-full w-full flex items-end">
+                            <div className="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
+                                <span className="absolute w-16 h-16 -top-1 -right-1 bg-blue-500 rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -right-1 bg-teal-500 rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -left-1 bg-indigo-300 rounded-md rotate-45" />
+                            </div>
+                        </div>
+                        <div className="mx-auto text-center max-w-xl md:max-w-2xl relative space-y-8">
+                            <h1 className="text-3xl/tight sm:text-4xl/tight md:text-5xl/tight font-bold text-blue-950">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 from-20% via-indigo-400 via-30% to-teal-600">Book Your Stay Now</span>
+                            </h1>
+                            <p className="text-gray-600">Embrace the tranquility and natural beauty of Pine Grove Lodge. Immerse yourself in a peaceful oasis in the heart of Nairobi.</p>
+                            <PickDate date={date} setDate={setDate} startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <Offers/>
+        </div>
     )
 }
 
