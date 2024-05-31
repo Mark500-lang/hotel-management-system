@@ -123,14 +123,14 @@ function Home({date, setDate, startDate, setStartDate, endDate, setEndDate}){
                             <div className="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
                                 <span className="absolute w-16 h-16 -top-1 -right-1 bg-blue-500 rounded-md rotate-45" />
                                 <span className="absolute w-16 h-16 -bottom-1 -right-1 bg-teal-500 rounded-md rotate-45" />
-                                <span className="absolute w-16 h-16 -bottom-1 -left-1 bg-indigo-300 rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -left-1 bg-[rgb(205,1,80)] rounded-md rotate-45" />
                             </div>
                         </div>
                         <div className="absolute left-0 bottom-0 h-full w-full flex items-end">
                             <div className="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
                                 <span className="absolute w-16 h-16 -top-1 -right-1 bg-blue-500 rounded-md rotate-45" />
-                                <span className="absolute w-16 h-16 -bottom-1 -right-1 bg-teal-500 rounded-md rotate-45" />
-                                <span className="absolute w-16 h-16 -bottom-1 -left-1 bg-indigo-300 rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -right-1 bg-[rgb(205,1,80)]rounded-md rotate-45" />
+                                <span className="absolute w-16 h-16 -bottom-1 -left-1 bg-[rgb(205,1,80)] rounded-md rotate-45" />
                             </div>
                         </div>
                         <div className="mx-auto text-center max-w-xl md:max-w-2xl relative space-y-8">

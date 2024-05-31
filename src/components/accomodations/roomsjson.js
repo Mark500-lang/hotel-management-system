@@ -8,7 +8,7 @@ export const roomsInfo = [
         beds: "1 Queen bed",
         bathrooms: "1 Bathroom",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imgsrc: "../assets/image6.jpg",
+        imgsrc: "../assets/image10.jpg",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const roomsInfo = [
         beds: "1 Queen bed and 1 Twin",
         bathrooms: "2 Bathrooms",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imgsrc: "../assets/image6.jpg",
+        imgsrc: "../assets/image2.jpg",
     },
     {
         id: 3,

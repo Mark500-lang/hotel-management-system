@@ -8,7 +8,7 @@ function PickDate({date, setDate, startDate, setStartDate, endDate, setEndDate})
 	
 	return (
 		<div className=''>
-			<div className='flex flex-row max-w-fit mx-auto gap-4 mt-10'>
+			<div className='grid lg:flex lg:flex-row max-w-fit mx-auto gap-4 mt-10'>
 				<DatePicker
 				showIcon
 				icon={<FaRegCalendarAlt className='text-grey text-lg top-[0.7rem]'/>}

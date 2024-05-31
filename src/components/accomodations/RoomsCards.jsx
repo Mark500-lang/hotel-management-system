@@ -7,7 +7,7 @@ function RoomsCards({id, name, capacity, beds, bathrooms, description, imagesrc,
         setRoomId(id);
     }
     return(
-        <div className="w-full max-w-[60rem] flex flex-col shadow rounded my-10">
+        <div className="w-full max-w-[60rem] mx-auto flex flex-col shadow rounded my-10">
             <div className="w-full flex gap-5 flex-row mx-auto ">
                             <div
                                 className="m-0 w-2/5 shrink-0 rounded-r-none"
