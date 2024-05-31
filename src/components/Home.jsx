@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Offers from './Offers';
 import PickDate from './PickDate';
 
@@ -117,7 +117,7 @@ function Home({date, setDate, startDate, setStartDate, endDate, setEndDate}){
             </div>
 
             <section className="py-24">
-                <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
+                <div className="max-w-6xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
                     <div className="w-full relative py-8 md:py-10 px-6 md:px-8 rounded-2xl bg-gradient-to-tr from-gray-100 to-gray-200">
                         <div className="absolute right-0 top-0 h-full w-full flex justify-end">
                             <div className="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">

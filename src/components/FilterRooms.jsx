@@ -4,7 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
 
-function FilterRooms({date, setDate, startDate, setStartDate, endDate, setEndDate, adults, setAdults, setFilterRooms}){
+function FilterRooms({date, setDate, startDate, setStartDate, endDate, setEndDate, adults, setAdults, setFilterRooms, calcNights, timeStaying}){
     const handleChange = (range) => {
         const [startDate, endDate] = range;
         setStartDate(startDate);
@@ -30,11 +30,13 @@ function FilterRooms({date, setDate, startDate, setStartDate, endDate, setEndDat
     const handleFilterRooms=()=>{
         //setCount(prevCount => prevCount+=1);
         setFilterRooms(adults)
+        calcNights()
     }
 	return (
 		<div className=''>
-			<div className='flex flex-row max-w-fit mx-auto gap-4 mt-10'>
+			<div className='grid lg:flex lg:flex-row max-w-fit mx-auto gap-4 mt-10'>
 				<DatePicker
+                id='datepicker'
 				showIcon
 				icon={<FaRegCalendarAlt className='text-grey text-lg top-[0.7rem]'/>}
 				selected={startDate}
@@ -46,6 +48,11 @@ function FilterRooms({date, setDate, startDate, setStartDate, endDate, setEndDat
 				placeholderText="Select Dates"
 				className='border-2 border-[rgb(205,1,80)] h-14 rounded-lg'
 				/>
+                <label
+                    for="datepicker"
+                    class="bg-white px-2 pointer-events-none absolute left-[6rem] top-5 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+                    >Select Dates
+                </label>
                 <div className="flex flex-row border-2 px-4">
                     <button className="text-[27px]" disabled={adults <= 0 ? true : false} onClick={decrement}><CiCircleMinus/ ></button>&nbsp;
                     <div className='border min-w-12 m-auto text-center'><h1  className="text-[25px]">{adults}</h1></div>&nbsp;

@@ -9,6 +9,7 @@ export const roomsInfo = [
         bathrooms: "1 Bathroom",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         imgsrc: "../assets/image10.jpg",
+        price: 2000,
     },
     {
         id: 2,
@@ -18,6 +19,7 @@ export const roomsInfo = [
         bathrooms: "2 Bathrooms",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         imgsrc: "../assets/image2.jpg",
+        price: 4000,
     },
     {
         id: 3,
@@ -27,5 +29,6 @@ export const roomsInfo = [
         bathrooms: "4 Bathrooms",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         imgsrc: "../assets/image6.jpg",
+        price: 6000,
     },
 ];

@@ -8,8 +8,8 @@ import Dining from './components/Dining';
 import Contacts from './components/Contacts';
 function App() {
   const [date, setDate] = useState(new Date());
-	const [startDate, setStartDate] = useState();
-	const [endDate, setEndDate] = useState();
+	const [startDate, setStartDate] = useState(date);
+	const [endDate, setEndDate] = useState(date);
   const [adults, setAdults] = useState(0);
   // const [children, setChildren] = useState();
   // const [infants, setInfants] = useState();
